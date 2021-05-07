@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
+
 <html>
+
 <head>
 
-<!-- Template borrowed from Andrew Carr. -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BL44L654N5"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -15,281 +14,109 @@
   gtag('config', 'G-BL44L654N5');
 </script>
 
+<link rel='stylesheet' href='style.css'>
 
 
-	<title>Sterling Suggs</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<title>Sterling Suggs projects</title>
 
-
-<style>
-
-/* Style*/
-body, html {
-	/*max-width: 100%;*/
-	/*overflow-x: hidden;*/
-	height: 100%;
-	margin: 0;
-	font: 400 15px/1.8 "Lato", sans-serif;
-	color: #777;
-}
-
-.nav-pills>li>a:link, .nav-pills>li>a:visited{
-	color:#777;
-	margin:3px;
-}
-
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-	color:white;
-	background-color:#536872;
-	margin:3px;
-}
-
-
-
-.project {
-	border:1px solid black; 
-	padding:10px;
-	margin: 3px;
-
-}
-.project:hover {
-	background-color: #d7d7d7;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-h3 {
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-h2 {
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font: 25px "Lato", sans-serif;
-  color: #111;
-}
-
-
-
-</style>
 
 </head>
+
 <body>
+    
+    <nav class="navbar">
+        <div class="menu">
+        <a href="index.html" id=home-button>Sterling Suggs</a>
+        <a href="projects.html" id="current-page">ML stuff</a>
+        <a href="music.html">Music stuff</a>
+        <a href="georgia.html">Georgia</a>
+        </div>
+
+        
+    </nav>
+
+
+<div class='main'>
+    <h3 class="ml">ML Stuff</h3>
+
+
+    <div class="project">
+        <a href="https://github.com/Tahlor/GRAMPS" target="_blank">GRAMPS</a>: Generating Really Awesome Poetry (Sometimes)
+        <p> We built an RNN-based model to generate poetry, focusing on meter, rhyme, and metaphor.  The following example compares student life to bondage: <br />
+        <samp>  Demeter, my love, poor scholar, <br/>
+                Thou shalt ever dance for thy dollar. <br/>
+                You’re a bond like a pudding-sick pauper, <br/>
+                While I—I am a professor! <br/>
+        </samp>
+            Read the <a href='gramps.pdf' target='blank'>report</a> <br />
+            View on <a href='https://github.com/Tahlor/GRAMPS' target='_blank'>github</a>
+        </p>
+    </div>
+
+
+    <div class="project">
+        <a href="https://github.com/a-morr/nbacme" target="_blank">NBAcme</a>: Predicting NBA outcomes 
+        <p> For a final project, we trained models to forecast game results in professional basketball.
+        We scraped historical and daily data, generated features including Elo scores, and trained with every ML algorithm in the book to see which would give the best accuracy.  Our final accuracy was comparable to that of FiveThirtyEight's NBA predictions. <br/>
+            View on <a href='https://github.com/a-morr/nbacme target='_blank'>github</a> <br/>
+            Jump to the <a href='https://github.com/a-morr/nbacme/blob/master/Final.ipynb' target='blank'>final report</a> <br/>
+            Or read the <a href='https://github.com/a-morr/nbacme/blob/master/Algorithm_Discussion.ipynb' target='blank'>algorithm page</a> <br/>
+
+        </p>
+    </div>
+
+    <div class="project">
+        <a href="HarryPotter.pdf" target="_blank">Magical Romance</a>: Optimal Control curriculum
+        <p> We wrote a light-hearted lab assignment for applied math majors to implement what they learned in class about solving optimal control problems with the linear-quadratic regulator (LQR).
+        </p>
+    </div>
+
+    <div class="project">
+        <a href="https://github.com/swsuggs/old_labs/blob/main/FacialRecNotebook.ipynb" target="_blank">Facial recognition</a>: Title
+        <p> I built a basic facial recognition system using eigenfaces.
+        </p>
+    </div>
+
+    <div class="project">
+        <a href="https://github.com/swsuggs/old_labs/blob/main/kalman.ipynb" target="_blank">Kalman filter</a>: Title
+        <p> I implemented a Kalman filter and used it to predict where a projectile will strike as well as it's point of origin, from noisy observations.
+        </p>
+    </div>
+
+    <div class="project">
+        <a href="https://github.com/swsuggs/old_labs/blob/main/ARMA.ipynb" target="_blank">ARMA</a>: Title
+        <p> I predicted the future of an arbitrary time series using a hand-coded ARMA model.  (Scroll down for the cool graphs.)
+
+        </p>
+    </div>
+
+    <div class="project">
+        <a href="td_lambda.pdf" target="_blank">True online TD(λ)</a>: Title
+        <p>We implemented True Online TD(λ), an improvement on classic TD(λ) that allows more frequent value updates.  We test it in two prediction and two control tasks.<br/>
+        Read the original <a href="http://proceedings.mlr.press/v32/seijen14.html" target="_blank">paper</a><br/>
+        Read our <a href= "td_lambda.pdf" target='_blank'>report</a><br/>
+        </p>
+    </div>
+
+    <div class="project">
+        <a href="cpc.pdf" target="_blank">CPC</a>: Contrastive Predictive Coding
+        <p> I used Contrastive Predictive Coding to learn high-level features in Space Invaders, with the idea that pre-training an encoder could reduce the burden on an RL agent.  This paper describes my implementation and an initial experiment in that direction.
+
+        </p>
+    </div>
 
 
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-     </div>
-
-     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav nav-pills">
-	      <li role="presentation" class="active nav-item"><a href="#top" class="nav-link">Top</a></li>
-	      <li role="presentation" class="nav-item"><a href="#computer">ML Stuff</a></li>
-	      <li role="presentation" class="nav-item"><a href="#other">Other Stuff</a></li>
-	      <!-- <li role="presentation" class="nav-item"><a href="#extra-curricular">Extra Curricular</a></li>
-	      <li role="presentation" class="nav-item"><a href="#algo">Algorithms and Data Structures</a></li>
-	      <li role="presentation" class="nav-item"><a href="#res">Research</a></li>
-	      <li role="presentation" class="nav-item"><a href="#biz">Entrepreneurial</a></li>
-	      <li role="presentation" class="nav-item"><a href="#words">Writing and Communication</a></li>
-	      <li role="presentation" class="nav-item"><a href="#help">Globally Impactful Service</a></li> -->
- 	 </ul>
- 	</div>
-
-
-  </div>
-</nav>
-
-
-
-<div class="container">
-	<hr class="featurette-divider">
-	<div class="row" style="margin-top:45px;">
-		<h2 class="proj"><a href="../index.html"><span class="glyphicon glyphicon-home" style="color:#536872"></span></a> Cool stuff I did once</h2> <!--(updated Feb 2021)-->
-	</div>
-
-
-
-	<div>
-
-        <h3 class="computer">ML Stuff</h3>
-		<div class="project">
-			<a href="link" target="_blank">A cool video</a>
-			<p> This is a video of something cool I did. <a href="link" target="_blank">Watch the video here.</a>
-			</p>
-			<p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/link-end" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</p>
-		</div>
-		
-
-
-		<div class="project">
-			<a href="https://github.com/Tahlor/GRAMPS" target="_blank">GRAMPS</a>: Generating Really Awesome Poetry (Sometimes)
-			<p> We built an RNN-based model to generate poetry, focusing on meter, rhyme, and metaphor.  The following example compares student life to bondage: <br />
-			<samp>  Demeter, my love, poor scholar, <br/>
-                	Thou shalt ever dance for thy dollar. <br/>
-                	You’re a bond like a pudding-sick pauper, <br/>
-                	While I—I am a professor! <br/>
-            </samp>
-                Read the <a href='gramps.pdf' target='blank'>report</a> <br />
-                View on <a href='https://github.com/Tahlor/GRAMPS' target='_blank'>github</a>
-
-			</p>
-		</div>
-		
-		
-		
-		<div class="project">
-			<a href="https://github.com/a-morr/nbacme" target="_blank">NBAcme</a>: Predicting NBA outcomes 
-			<p> For a final project, we trained models to forecast game results in professional basketball.
-			We scraped historical and daily data, generated features including Elo scores, and trained with every ML algorithm in the book to see which would give the best accuracy.  Our final accuracy was comparable to that of FiveThirtyEight's NBA predictions. <br/>
-                View on <a href='https://github.com/a-morr/nbacme target='_blank'>github</a> <br/>
-                Jump to the <a href='https://github.com/a-morr/nbacme/blob/master/Final.ipynb' target='blank'>final report</a> <br/>
-                Or read the <a href='https://github.com/a-morr/nbacme/blob/master/Algorithm_Discussion.ipynb' target='blank'>algorithm page</a> <br/>
-
-			</p>
-		</div>
-
-
-		<div class="project">
-			<a href="HarryPotter.pdf" target="_blank">Magical Romance</a>: Optimal Control curriculum
-			<p> We wrote a light-hearted lab assignment for applied math majors to implement what they learned in class about solving optimal control problems with the linear-quadratic regulator (LQR).
-			</p>
-		</div>
-
-
-
-        <div class="project">
-			<a href="https://github.com/swsuggs/old_labs/blob/main/FacialRecNotebook.ipynb" target="_blank">Facial recognition</a>: Title
-			<p> I built a basic facial recognition system using eigenfaces.
-
-			</p>
-		</div>
-
-
-        <div class="project">
-			<a href="https://github.com/swsuggs/old_labs/blob/main/kalman.ipynb" target="_blank">Kalman filter</a>: Title
-			<p> I implemented a Kalman filter and used it to predict where a projectile will strike as well as it's point of origin, from noisy observations.
-
-			</p>
-		</div>
-
-
-        <div class="project">
-			<a href="https://github.com/swsuggs/old_labs/blob/main/ARMA.ipynb" target="_blank">ARMA</a>: Title
-			<p> I predicted the future of an arbitrary time series using a hand-coded ARMA model.  (Scroll down for the cool graphs.)
-
-			</p>
-		</div>
-
-        <div class="project">
-			<a href="td_lambda.pdf" target="_blank">True online TD(λ)</a>: Title
-			<p>We implemented True Online TD(λ), an improvement on classic TD(λ) that allows more frequent value updates.  We test it in two prediction and two control tasks.<br/>
-			Read the original <a href="http://proceedings.mlr.press/v32/seijen14.html" target="_blank">paper</a><br/>
-            Read our <a href= "td_lambda.pdf" target='_blank'>report</a><br/>
-			</p>
-		</div>
-
-		<div class="project">
-			<a href="cpc.pdf" target="_blank">CPC</a>: Contrastive Predictive Coding
-			<p> I used Contrastive Predictive Coding to learn high-level features in Space Invaders, with the idea that pre-training an encoder could reduce the burden on an RL agent.  This paper describes my implementation and an initial experiment in that direction.
-
-			</p>
-		</div>
-
-
-
-
-		<div class="project">
-			<a href="link" target="_blank">Text</a>: Title
-			<p>                
-
-			</p>
-		</div>
-
-
-		
-	</div>
-	
-	<div>
-	<h3 class="other">Other Stuff</h3>
-	    
-	    
-	    <div class="project">
-			<a href="link" target="_blank">Text</a>: Title
-			<p>                
-
-			</p>
-		</div>
-		
-	</div>
+    
 
 
 </div>
 
-<script type="text/javascript">
 
 
-$(document).ready(function(){
 
-$("a[href='#top']").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
-});
-
-$("a[href='#computer']").click(function() {
-  $("html, body").animate({ scrollTop: $(".computer").offset().top- 60 }, "slow");
-  return false;
-});
-
-$("a[href='#other']").click(function() {
-  $("html, body").animate({ scrollTop: $(".other").offset().top- 60 }, "slow");
-  return false;
-});
-
-
-$("li[role='presentation']").children().click(function() {
-	$("li[role='presentation']").removeClass("active");
-	$(this).parent().addClass("active");
-	return false;
-})
-
-});
-
-</script>
 
 </body>
 
 
-
 </html>
-
