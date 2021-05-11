@@ -52,11 +52,14 @@ body {
     z-index:10;
     letter-spacing: 1px;
     font-weight: 100;
-    
+
 }
 
 .menu {
-    padding:25
+    padding:25;
+    display:flex;
+    align-items:center;
+    
 }
 
 
@@ -248,14 +251,21 @@ body {
 }
 
 .container{
-    margin:auto;
+    
     position:relative;
     display: inline-block;
     text-align: justify;
-    margin:25px;
+    margin:30px;
+    
     
 }
 
 .container:hover{
-    border: 2px solid rgb(161, 161, 161);
+    border: 2px solid rgb(175, 173, 173);
+    
+}
+
+div.flex{
+    display: flex;
+    justify-content:space-around;
 }
