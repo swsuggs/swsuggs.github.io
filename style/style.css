@@ -12,19 +12,36 @@
 
 
 :root{
-    --theme-main:rgb(8, 26, 131);
+    --theme-main:rgb(16, 30, 110);
     --theme-gray:rgb(82, 82, 82);
+    --theme-2: rgb(1,1,1);
+    --theme-background: rgb(255, 254, 240);
+    --text-font:'Newsreader';
+    --title-font:'Alegreya Sans';
 }
 
 body {
-    background-color: white;
-    font-family: 'Raleway', sans-serif;
+    background-color: var(--theme-background);
+    font-family: var(--text-font);
+    font-size:18px;
+    line-height: 1.5;
+    text-align: justify;
     /* margin: 0; */
     /* padding: 0; */
   }
 
+.title {
+    font-family: var(--title-font);
+    font-size: 46px;
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
 .navbar{
     background-color:var(--theme-main);
+    font-family: var(--title-font);
     width:100%;
     height:100px;
     color:var(--theme-main);
@@ -33,6 +50,8 @@ body {
     left: 0;
     top: 0;
     z-index:10;
+    letter-spacing: 1px;
+    font-weight: 100;
     
 }
 
@@ -45,9 +64,9 @@ body {
     display:inline-block;
     margin:5px;
     padding:10px 15px;
-    border:1px solid white;
+    border:1px solid var(--theme-background);
     border-radius:4px;
-    color:white;
+    color:var(--theme-background);
     background-color:var(--theme-main);
     text-decoration: none;
     transition: background .5s;
@@ -57,16 +76,16 @@ body {
     display:inline-block;
     margin:5px;
     padding:10px 15px;
-    border:1px solid white;
+    border:1px solid var(--theme-background);
     border-radius:4px;
-    background-color:white;
+    background-color:var(--theme-background);
     color:var(--theme-color);
     text-decoration: none;
     transition: background .5s;
 }
 
 #current-page:hover {
-    color:white;
+    color:var(--theme-background);
     background-color:var(--theme-main);
 }
 
@@ -76,11 +95,13 @@ body {
     padding:10px 15px;
     text-transform: uppercase;
     border:none;
+    font-family: var(--title-font);
+    font-size:18px;
 }
 
 .menu a:hover {
 
-    background-color:white;
+    background-color:var(--theme-background);
     color:var(--theme-main);
 }
 
@@ -90,19 +111,56 @@ body {
     position:relative;
     top:100px;
     margin:50px auto;
+    height:100%;
 }
 
+.inline-item {
+    display:inline-block;
+    max-width: 100%;
+    padding:10px;
+    /* border:1px solid red; */
+}
+
+.button{
+    display:inline-block;
+    margin:5px;
+    padding:10px 15px;
+    border:1px solid var(--theme-background);
+    border-radius:4px;
+    color:var(--theme-background);
+    background-color:var(--theme-main);
+    text-decoration: none;
+    transition: background .5s;
+}
+
+.button:hover{
+    background-color: var(--theme-background);
+    color:var(--theme-main);
+    border:1px solid var(--theme-main);
+}
+
+
+
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: -1;
+    width: 100%;
+    text-align: center;
+    padding:50px;
+    height: 100px;
+  }
+
+
+
 .project {
-    border: 3px solid var(--theme-gray);
+    border: 2px solid var(--theme-gray);
     border-radius: 10px;
     margin:15px auto;
     padding:15px;
 }
 
-h3 {
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
 
 .res-section {
     border-bottom: 2px solid var(--theme-gray);
@@ -110,11 +168,29 @@ h3 {
     padding:15px;
 }
 
+.res-sec-title{
+    font-family: var(--title-font);
+    letter-spacing: 4px;
+    font-size: 32px;
+    font-weight: 100;
+}
+
 .res-item {
     margin:25px auto;
     padding:15px;
     width:100%;
     /* border:1px solid red; */
+}
+
+.res-content {
+    padding: 10px;
+}
+
+.res-list {
+    padding:10px 25px;
+}
+.res-list li {
+    margin:5px 0px;
 }
 
 .res-item h2 {
@@ -144,7 +220,7 @@ h3 {
 
 .skill {
     display:inline-block;
-    font-size:xx-large;
+    font-size:52px;
     color:var(--theme-gray);
 }
 
@@ -152,16 +228,34 @@ h3 {
     color:var(--theme-main);
 }
 
-.music-item {
-    border: 3px solid var(--theme-gray);
-    border-radius: 10px;
-    margin:15px auto;
-    padding:15px;
-}
-
 .music-item h2 {
     text-transform: uppercase;
 }
 .music-item-inst {
     font-style: italic;
+}
+
+.rel {
+    position: relative;
+}
+.div-link {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+.container{
+    margin:auto;
+    position:relative;
+    display: inline-block;
+    text-align: justify;
+    margin:25px;
+    
+}
+
+.container:hover{
+    border: 2px solid rgb(161, 161, 161);
 }
