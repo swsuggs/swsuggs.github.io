@@ -269,3 +269,9 @@ div.flex{
     display: flex;
     justify-content:space-around;
 }
+
+.field {
+    background-color:white;
+    border: 1px solid var(--theme-gray);
+}
+
