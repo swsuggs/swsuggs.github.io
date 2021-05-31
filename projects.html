@@ -27,16 +27,12 @@
 <body>
     
     <nav class="navbar">
-        <div class="menu">
         <a href="index.html" id=home-button>Sterling Suggs</a>
         <a href="projects.html" id="current-page">ML projects</a>
         <a href="musicmain.html">Music</a>
         <a href='food.html'>Food</a>
         <a href="georgia.html">Georgia</a>
         <a href="resume.html">Resume</a>
-        
-        </div>
-
         
     </nav>
 
@@ -48,7 +44,7 @@
 
 
     <div class="project">
-        <a href="ml/cpc.pdf" target="_blank">CPC</a>: Contrastive Predictive Coding
+        <strong>Contrastive Predictive Coding</strong>
         <p> I used Contrastive Predictive Coding 
             to learn high-level features in Space Invaders, 
             with the idea that pre-training an encoder could reduce the burden on an RL agent.  
@@ -71,13 +67,13 @@
 
 
     <div class="project">
-        <a href="https://github.com/Tahlor/GRAMPS" target="_blank">GRAMPS</a>: Generating Really Awesome Poetry (Sometimes)
+        <strong>GRAMPS: Generating Really Awesome Poetry (Sometimes)</strong>
         <p> We built an RNN-based model to generate poetry, focusing on meter, rhyme, and metaphor.  
             The following example compares student life to bondage: <br />
-        <samp>  Demeter, my love, poor scholar, <br/>
-                Thou shalt ever dance for thy dollar. <br/>
-                You’re a bond like a pudding-sick pauper, <br/>
-                While I—I am a professor! <br/>
+        <samp style='margin-left:2em;'>  Demeter, my love, poor scholar, </samp><br>
+        <samp style='margin-left:2em;'>Thou shalt ever dance for thy dollar. </samp><br>
+        <samp style='margin-left:2em;'>You’re a bond like a pudding-sick pauper, </samp><br/>
+            <samp style='margin-left:2em;'>While I—I am a professor! </samp><br/>
         </samp>
             Read the <a href='ml/gramps.pdf' target='blank'>report</a> <br />
             View on <a href='https://github.com/Tahlor/GRAMPS' target='_blank'>github</a>
@@ -86,7 +82,7 @@
 
 
     <div class="project">
-        <a href="https://github.com/a-morr/nbacme" target="_blank">NBAcme</a>: Predicting NBA outcomes 
+        <strong>NBAcme: Predicting NBA outcomes</strong>
         <p> For a final project, we trained models to forecast game results in professional basketball.
         We scraped historical and daily data, generated features including Elo scores, and trained with every 
         ML algorithm in the book to see which would give the best accuracy.  Our final accuracy was comparable 
@@ -99,15 +95,16 @@
     </div>
 
     <div class="project">
-        <a href="ml/HarryPotter.pdf" target="_blank">Magical Romance</a>: Optimal Control curriculum
+        <strong>Magical Romance: Optimal Control curriculum</strong>
         <p> We wrote a light-hearted lab assignment for applied math majors to implement 
-            what they learned in class about solving optimal control problems with the linear-quadratic regulator (LQR).
+            what they learned in class about solving optimal control problems with the linear-quadratic regulator (LQR).<br>
+            <a href="ml/HarryPotter.pdf" target="_blank">Magical Romance</a>
         </p>
     </div>
 
 
     <div class="project">
-        <a href="ml/td_lambda.pdf" target="_blank">True online TD(λ)</a>: Classic RL
+        <strong>True online TD(λ): Classic RL</strong>
         <p>We implemented True Online TD(λ), an improvement on classic TD(λ) that allows more frequent value updates.  
             We test it in two prediction and two control tasks.<br/>
         Read the original <a href="http://proceedings.mlr.press/v32/seijen14.html" target="_blank">paper</a><br/>
@@ -117,22 +114,24 @@
 
 
     <div class="project">
-        <a href="https://github.com/swsuggs/old_labs/blob/main/FacialRecNotebook.ipynb" target="_blank">Facial recognition</a>
-        <p> I built a basic facial recognition system using eigenfaces.  A very fun application of the math we learned in class.
+        <strong>Facial recognition</strong>
+        <p> I built a basic facial recognition system using eigenfaces.  A very fun application of the math we learned in class.<br>
+            <a href="https://github.com/swsuggs/old_labs/blob/main/FacialRecNotebook.ipynb" target="_blank">Facial recognition notebook</a>
         </p>
     </div>
 
     <div class="project">
-        <a href='ml/learning-report.pdf' target="_blank">MCMC</a>: Learning hyperparameters
+        <strong>MCMC: Learning hyperparameters</strong>
         <p>
         I did a lot of MCMC for one class, including Metropolis-Hastings and Gibbs sampling, all from scratch.
-        Here is one report describing results of learning the hyperparameters in a Bayesian network.
+        Here is one report describing results of learning the hyperparameters in a Bayesian network.<br>
+        <a href='ml/learning-report.pdf' target="_blank">Report</a>
         </p>
     </div>
 
 
     <div class="project">
-        Time Series modeling
+        <strong>Time Series modeling</strong>
         <p> 
             <a href="https://github.com/swsuggs/old_labs/blob/main/kalman.ipynb" target="_blank">Kalman filter</a>:
             I implemented a Kalman filter and used it to predict where a projectile will strike as well as it's point of origin, from noisy observations.
