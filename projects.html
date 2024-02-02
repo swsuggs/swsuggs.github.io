@@ -41,13 +41,35 @@
     <div class='inline-item'>Just a few of the many amazing things I've created . . . .</div>
 
     <div class='project'>
+        <strong>Armory</strong>
+        <p>
+            Armory is an open source framework for repeatable, scalable, 
+            and robust evaluations of ML defenses against adversarial attacks.
+            While not a personal project, my contributions are significant.
+        </p>
+        <img src='img/adversarial.png' alt="adversarial example" class='inline-item'>
+        <a href="https://github.com/twosixlabs/armory" target="_blank">Github page</a>
+    </div>
+
+    <div class='project'>
         <strong>Recipe Recommender System</strong>
         <p>
             I built a simple system to help me find new recipes on Bon Appetit.  
             After scraping and cleaning recipe data from the website, I created a basic nearest-neighbors 
             model and a fancier collaborative filtering model to recommend likely dishes.
         </p>
+        <img src='img/recipe-clusters.png' alt="recipe clusters" class='inline-item' style='max-height: 400px; margin:auto; display:block;'>
         View on <a href="https://github.com/swsuggs/recipe-recommender" target='_blank'>github</a>
+    </div>
+
+    <div class="project">
+        <strong>Reinforcement Learning with Auxiliary Memory</strong>
+        <p>
+            For my master's thesis I designed several versions of RL agents augmented with external
+            read/write memory systems.
+        </p>
+        <img src='img/rainbow_mem.png' alt="memory model" class='inline-item'>
+        <a href="https://scholarsarchive.byu.edu/etd/9028/" target="_blank">Download page</a>
     </div>
 
     <div class="project">
@@ -56,10 +78,10 @@
             to learn high-level features in Space Invaders, 
             with the idea that pre-training an encoder could reduce the burden on an RL agent.  
             This paper describes my implementation and an initial experiment in that direction.
-
         </p>
+        <img src='img/cpc-loss.png' alt="cpc loss" class='inline-item' style='max-height: 400px; margin:auto; display:block;'>
         Read the original <a href=https://arxiv.org/abs/1807.03748 target="_blank">paper</a><br>
-        Read my <a href='ml/cpc.pdf'>report</a>
+        Read my <a href='ml/cpc.pdf' target="_blank">report</a>
     </div>
 
 
@@ -71,6 +93,17 @@
             Check it out <a href="https://swsuggs.github.io" target="_blank">here</a>!
         </p>
     </div> -->
+
+    <div class="project">
+        <strong>AlphOthello Zero</strong>
+        <p>
+            Reinforcement learning meets tree search to learn a two-player game through self-play.
+            We adapted the <a href="https://deepmind.google/discover/blog/alphago-zero-starting-from-scratch/" target="_blank">AlphaGo Zero</a> 
+            algorithm to play the game Othello.  Sadly our one GPU wasn't strong enough to train it fully.
+        </p>
+        <img src='img/mcts.png' alt="monte carlo tree search" class='inline-item' style='max-height: 400px; margin:auto; display:block;'>
+        Read our <a href="ml/Alphello_Zero.pdf" target="_blank">writeup</a>
+    </div>
 
 
     <div class="project">
@@ -94,19 +127,22 @@
         We scraped historical and daily data, generated features including Elo scores, and trained with every 
         ML algorithm in the book to see which would give the best accuracy.  Our final accuracy was comparable 
         to that of FiveThirtyEight's NBA predictions. <br/>
-            View on <a href="https://github.com/a-morr/nbacme" target="_blank">github</a> <br/>
-            Jump to the <a href='https://github.com/a-morr/nbacme/blob/master/Final.ipynb' target='blank'>final report</a> <br/>
-            Or read the <a href='https://github.com/a-morr/nbacme/blob/master/Algorithm_Discussion.ipynb' target='blank'>algorithm page</a> <br/>
-
         </p>
+        <img src='img/elo.png' alt="nba elo rating" class='inline-item' style='max-height: 400px; margin:auto; display:block;'>
+        View on <a href="https://github.com/a-morr/nbacme" target="_blank">github</a> <br/>
+        Jump to the <a href='https://github.com/a-morr/nbacme/blob/master/Final.ipynb' target='blank'>final report</a> <br/>
+        Or read the <a href='https://github.com/a-morr/nbacme/blob/master/Algorithm_Discussion.ipynb' target='blank'>algorithm page</a> <br/>
+
+        
     </div>
 
     <div class="project">
         <strong>Magical Romance: Optimal Control curriculum</strong>
         <p> We wrote a light-hearted lab assignment for applied math majors to implement 
             what they learned in class about solving optimal control problems with the linear-quadratic regulator (LQR).<br>
-            <a href="ml/HarryPotter.pdf" target="_blank">Magical Romance</a>
+            <img src='img/love-control.png' alt="love control" class='inline-item' style='max-height: 400px; margin:auto; display:block;'>
         </p>
+        <a href="ml/HarryPotter.pdf" target="_blank">Magical Romance</a>
     </div>
 
 
@@ -114,6 +150,7 @@
         <strong>True online TD(λ): Classic RL</strong>
         <p>We implemented True Online TD(λ), an improvement on classic TD(λ) that allows more frequent value updates.  
             We test it in two prediction and two control tasks.<br/>
+            <img src='img/td-lambda.png' alt="rms loss" class='inline-item' style='max-height: 400px; margin:auto; display:block;'>
         Read the original <a href="http://proceedings.mlr.press/v32/seijen14.html" target="_blank">paper</a><br/>
         Read our <a href= "ml/td_lambda.pdf" target='_blank'>report</a><br/>
         </p>
@@ -122,7 +159,8 @@
 
     <div class="project">
         <strong>Facial recognition</strong>
-        <p> I built a basic facial recognition system using eigenfaces.  A very fun application of the math we learned in class.<br>
+        <p> I built a basic facial recognition system using eigenfaces.  A fun application of the math we learned in class.<br>
+            <img src='img/eigenface.png' alt="eigenface" class='inline-item' style='max-height: 400px; margin:auto; display:block;'>
             <a href="https://github.com/swsuggs/old_labs/blob/main/FacialRecNotebook.ipynb" target="_blank">Facial recognition notebook</a>
         </p>
     </div>
@@ -132,6 +170,7 @@
         <p>
         I did a lot of MCMC for one class, including Metropolis-Hastings and Gibbs sampling, all from scratch.
         Here is one report describing results of learning the hyperparameters in a Bayesian network.<br>
+        <img src='img/mcmc.png' alt="markov chain monte carlo" class='inline-item' style='max-height: 400px; margin:auto; display:block;'>
         <a href='ml/learning-report.pdf' target="_blank">Report</a>
         </p>
     </div>
@@ -147,22 +186,13 @@
             <a href="https://github.com/swsuggs/old_labs/blob/main/arma.ipynb" target="_blank">ARMA:</a>
             I predicted the future of an arbitrary time series using a hand-coded ARMA model.  (Scroll down for the cool graphs.)
         </p>
+        <img src='img/arma.png' alt="arma prediction" class='inline-item' style='max-height: 400px; margin:auto; display:block;'>
     </div>
-
-
-
-
 
 
     <div style='height:100px;'></div>
 
+    
 </div>
-
-
-
-
-
 </body>
-
-
 </html>
