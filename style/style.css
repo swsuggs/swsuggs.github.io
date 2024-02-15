@@ -13,6 +13,8 @@
 
 :root{
     --theme-main:rgb(16, 30, 110);
+    --theme-link: rgb(0, 0, 150);
+    --theme-link-visited: rgb(70, 0, 150);
     --theme-gray:rgb(82, 82, 82);
     --theme-2: rgb(1,1,1);
     --theme-background: rgb(255, 254, 240);
@@ -22,6 +24,14 @@
     --mlarge-font:1.9em;
     --small-font:1.1em;
     --msmall-font:1.2em;
+}
+
+a:link {
+    color:var(--theme-link);
+}
+
+a:visited {
+    color:var(--theme-link-visited)
 }
 
 body {
@@ -57,8 +67,6 @@ body {
     flex-wrap: wrap;
 
 }
-
-
 
 .navbar a { 
     margin:5px;
@@ -129,7 +137,6 @@ body {
     text-decoration: none;
     transition: background .5s;
     text-align:center;
-
 }
 
 .button:hover{
@@ -138,6 +145,17 @@ body {
     border:1px solid var(--theme-main);
 }
 
+a.button:link{
+    color:var(--theme-background);
+}
+a.button:visited{
+    color:var(--theme-background)
+}
+a.button:hover{
+    background-color: var(--theme-background);
+    color:var(--theme-main);
+    border:1px solid var(--theme-main);
+}
 
 
 .project {
